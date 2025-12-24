@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trustless ID (Concept)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="page">
+    <h1 class="title">Trustless Identification Card (Concept)</h1>
+
+    <div class="card-container">
+      <div class="card" id="idCard">
+        <!-- FRONT -->
+        <div class="card-face card-front">
+          <div class="card-header">
+            <span class="card-type">TRUSTLESS ID</span>
+            <span class="card-issuer">Parallel System</span>
+          </div>
+
+          <div class="card-body">
+            <div class="field">
+              <label>Verification Phrase</label>
+              <span>Correct Horse Battery Staple 2200</span>
+            </div>
+
+            <div class="field">
+              <label>Primary Identifier</label>
+              <span>1234567890</span>
+            </div>
+
+            <div class="field">
+              <label>Credential Block</label>
+              <span>0000-0000-0000-0000</span>
+            </div>
+
+            <div class="field">
+              <label>Alias Name</label>
+              <span>John Apple</span>
+            </div>
+
+            <div class="field">
+              <label>Status Code</label>
+              <span>#0042</span>
+            </div>
+
+            <div class="field">
+              <label>Issuance Epoch</label>
+              <span>2025.01</span>
+            </div>
+
+            <div class="field">
+              <label>Context Scope</label>
+              <span>Local / Voluntary</span>
+            </div>
+
+            <div class="field">
+              <label>Disclosure Mode</label>
+              <span>Selective (ZK-Compatible)</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            Tap or click to flip
+          </div>
+        </div>
+
+        <!-- BACK -->
+        <div class="card-face card-back">
+          <div class="card-header">
+            <span class="card-type">CREDENTIAL DATA</span>
+            <span class="card-issuer">Holder-Controlled</span>
+          </div>
+
+          <div class="card-body">
+            <div class="field">
+              <label>Capability</label>
+              <span>Eligible Operator</span>
+            </div>
+
+            <div class="field">
+              <label>Age Assertion</label>
+              <span>Over Legal Threshold</span>
+            </div>
+
+            <div class="field">
+              <label>Revocation Key ID</label>
+              <span>RK-98F2-A1</span>
+            </div>
+
+            <div class="field">
+              <label>Recovery Mode</label>
+              <span>Threshold / Social</span>
+            </div>
+
+            <div class="field">
+              <label>Linkability</label>
+              <span>Context-Bound Only</span>
+            </div>
+
+            <div class="field">
+              <label>Transferability</label>
+              <span>Non-Transferable</span>
+            </div>
+
+            <div class="field">
+              <label>Data Persistence</label>
+              <span>Ephemeral by Choice</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            Tap or click to flip
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="legend">
+      <h2>Legend (Human Explanation)</h2>
+      <ol>
+        <li><strong>Verification Phrase:</strong> A human-memorable phrase used for high-confidence verification without revealing legal identity.</li>
+        <li><strong>Primary Identifier:</strong> A non-semantic numeric reference with no inherent meaning.</li>
+        <li><strong>Credential Block:</strong> A formatted string used for cryptographic indexing, useless without holder consent.</li>
+        <li><strong>Alias Name:</strong> A changeable label for social or administrative use.</li>
+        <li><strong>Status Code:</strong> A short reference code used in local systems.</li>
+        <li><strong>Issuance Epoch:</strong> Indicates when the credential set was created.</li>
+        <li><strong>Context Scope:</strong> Defines where this ID is intended to be used.</li>
+        <li><strong>Disclosure Mode:</strong> Indicates selective, minimal data disclosure.</li>
+        <li><strong>Capability:</strong> What the holder is allowed to do, not who they are.</li>
+        <li><strong>Age Assertion:</strong> Proves age conditions without revealing birthdate.</li>
+        <li><strong>Revocation Key ID:</strong> Reference for disabling this credential if compromised.</li>
+        <li><strong>Recovery Mode:</strong> How the holder can recover access if keys are lost.</li>
+        <li><strong>Linkability:</strong> Whether this credential can be correlated across systems.</li>
+        <li><strong>Transferability:</strong> Indicates whether the credential can be used by others.</li>
+        <li><strong>Data Persistence:</strong> Whether data is long-lived or intentionally temporary.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
