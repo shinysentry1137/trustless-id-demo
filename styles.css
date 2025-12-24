@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f5f6f7;
+    color: #111;
+  }
+  
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-container {
+    perspective: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    width: min(90vw, 420px);
+    height: 260px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+    cursor: pointer;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-face {
+    position: absolute;
+    inset: 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    background: #eaeaea;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .card-body {
+    padding: 0.6rem 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+    flex-grow: 1;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  
+  .field label {
+    font-size: 0.6rem;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .field span {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-footer {
+    text-align: center;
+    font-size: 0.65rem;
+    padding: 0.4rem;
+    background: #f0f0f0;
+    color: #444;
+  }
+  
+  .legend {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+  
+  .legend h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  
+  .legend ol {
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+  }
+  
+  .legend li {
+    margin-bottom: 0.5rem;
+  }
+  
